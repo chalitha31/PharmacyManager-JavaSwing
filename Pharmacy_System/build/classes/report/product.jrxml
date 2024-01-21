@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="product" pageWidth="595" pageHeight="420" orientation="Landscape" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5c71944d-7bc9-4bb0-9834-f524706c5fc8">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="193" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="20" width="90" height="90" uuid="c2eda5af-0eee-40db-87f9-12df8a8439b7"/>
+				<imageExpression><![CDATA["C:/Users/sandu/OneDrive/Desktop/sad project/Pharmacy-logo-on-transparent-PNG.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="180" y="10" width="250" height="33" uuid="fee57ed1-17b9-4e59-acee-258f162af5ea"/>
+				<textElement>
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[The New Pharmacy Pvt Ltd.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="43" width="320" height="20" uuid="404e5222-41a9-4f42-9a97-6ed8addd45f4"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[281 T. B. Jayah Mawatha, Colombo : 01000SRILANKA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="70" width="400" height="20" uuid="d52651af-89df-4851-8806-31cebaaa8650"/>
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tel : 0115486751  Telefax : +94 11 9545888  Email : contact@newpharmacy.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="100" width="285" height="30" uuid="90d86d6a-0052-4e91-9280-cace55d93834"/>
+				<box rightPadding="0">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="6.0"/>
+					<rightPen lineWidth="6.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="301" y="171" width="39" height="19" uuid="dd978726-7ab8-440f-83ee-01b361ae4bed"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="350" y="170" width="110" height="20" uuid="b918d7c6-77d4-4843-8ac4-bf03f74d530c"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial Rounded MT Bold" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="h:mm:ss a">
+				<reportElement x="460" y="169" width="91" height="21" uuid="4932cdfd-3d13-4d59-aa39-f016ac834672"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="41" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="1" width="550" height="40" uuid="ef1f6b6b-56d1-402b-949b-af302322cf52"/>
+				<box>
+					<pen lineWidth="1.25"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="2" y="2" width="30" height="38" uuid="8a6a58c0-ab90-4127-9640-5a6e4ca24d8a"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="20" isBold="true"/>
+					</textElement>
+					<text><![CDATA[id]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="32" y="2" width="240" height="38" uuid="89bafeab-248d-4331-b8db-eeea3d36dafd"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.25" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.25" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="25" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Product]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="271" y="2" width="149" height="38" uuid="0472fa00-676c-460d-83d1-fa0ada78e27e"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.25" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.25" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="19" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Brand]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="421" y="3" width="129" height="37" uuid="a0809227-efcb-49da-ab5f-c224f301b7bf"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.25" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.25" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="19" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Category]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<textField>
+				<reportElement x="0" y="0" width="32" height="20" uuid="6f14de73-a653-49d1-91ac-7438c5bc0516">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="07d1ec0a-4749-4336-b62f-b785fae83b18"/>
+				</reportElement>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="0" width="240" height="20" uuid="fda4726c-d73f-4f19-9a33-d3a8fca89580">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6ebd51bb-b2c8-4208-ade4-a0850326a143"/>
+				</reportElement>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="271" y="0" width="149" height="20" uuid="4fc21996-ebe0-4c10-ab04-3012d5093cab">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="80020268-dbfc-4891-b88f-3cc88862f739"/>
+				</reportElement>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="130" height="20" uuid="3679bd7c-d24c-4d06-8c4d-5eaf7ce7e8ff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f6f117fd-e74c-4cea-ab9f-2f01e819206a"/>
+				</reportElement>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_4}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="400" y="50" width="153" height="30" uuid="b0ec835e-cc83-4db5-ac48-f98f6e115fca"/>
+				<box>
+					<topPen lineWidth="1.75"/>
+				</box>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STOCK MANAGER]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
